@@ -1,0 +1,76 @@
+name: 视频投稿
+description: 提名一份有明确出处和展示权利的抽象视频标本
+title: "[投稿] "
+labels:
+  - submission
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢捐献标本。请先提交出处与权利信息，不要直接上传高码率原片。
+  - type: input
+    id: title
+    attributes:
+      label: 视频标题
+      placeholder: 一个能识别这份标本的标题
+    validations:
+      required: true
+  - type: input
+    id: original_url
+    attributes:
+      label: 原始出处
+      description: 请尽量提供创作者首次发布地址，而不是搬运链接。
+      placeholder: https://
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: 创作者或权利人
+    validations:
+      required: true
+  - type: dropdown
+    id: rights
+    attributes:
+      label: 展示依据
+      options:
+        - 我是创作者或权利人
+        - 已取得创作者或权利人的明确授权
+        - 素材采用允许再分发的开放许可
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 权利依据
+      description: 提供许可名称、授权链接或可由维护者核验的说明。
+    validations:
+      required: true
+  - type: textarea
+    id: reason
+    attributes:
+      label: 为什么值得收录
+      placeholder: 它的语境、传播史或抽象机制是什么？
+    validations:
+      required: true
+  - type: textarea
+    id: moments
+    attributes:
+      label: 名场面时间点
+      placeholder: |
+        00:03 — 描述
+        00:08 — 描述
+    validations:
+      required: true
+  - type: input
+    id: tags
+    attributes:
+      label: 建议标签
+      placeholder: 故障艺术、语言错位、行为艺术
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 投稿确认
+      options:
+        - label: 我确认上述出处和展示依据真实、可核验。
+          required: true

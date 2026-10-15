@@ -1,0 +1,38 @@
+name: 考据更正
+description: 更正馆藏的出处、作者、许可、时间点或谱系
+title: "[更正] "
+labels:
+  - correction
+body:
+  - type: input
+    id: specimen
+    attributes:
+      label: 标本 ID 或页面链接
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: 需要更正的部分
+      options:
+        - 原始出处
+        - 创作者或权利人
+        - 许可状态
+        - 标题或描述
+        - 名场面时间点
+        - 梗谱系
+        - 其他元数据
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 正确信息
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 证据链接与说明
+    validations:
+      required: true

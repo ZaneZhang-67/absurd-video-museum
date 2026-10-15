@@ -1,0 +1,61 @@
+{
+  "$schema": "./schema/video-catalog.schema.json",
+  "version": 1,
+  "videos": [
+    {
+      "id": "signal-lost-human-found",
+      "title": "信号丢失，人类出现",
+      "summary": "当测试信号开始怀疑自己的职业规划：一份由程序生成的开馆标本。",
+      "published_at": "2026-10-15",
+      "added_at": "2026-10-15",
+      "language": "zxx",
+      "tags": [
+        "电子榨菜",
+        "故障艺术",
+        "无意义",
+        "原创"
+      ],
+      "media": {
+        "type": "local",
+        "src": "media/signal-lost-human-found.mp4",
+        "poster": "assets/posters/signal-lost-human-found.webp",
+        "duration_seconds": 6.0
+      },
+      "provenance": {
+        "creator": "赛博抽象标本馆",
+        "original_url": "https://github.com/ZaneZhang-67/absurd-video-museum",
+        "submitted_by": "ZaneZhang-67",
+        "source_note": "使用 FFmpeg 测试信号、噪声与色彩滤镜程序化生成；不含第三方素材。"
+      },
+      "rights": {
+        "license": "CC-BY-4.0",
+        "owner": "ZaneZhang-67",
+        "evidence": "本仓库的原创开馆样片；许可范围见 MEDIA-LICENSE.md。"
+      },
+      "moments": [
+        {
+          "at": 1.2,
+          "label": "信号第一次拒绝正常工作"
+        },
+        {
+          "at": 3.4,
+          "label": "色相进入不可解释阶段"
+        },
+        {
+          "at": 5.2,
+          "label": "一切短暂恢复，但没有意义"
+        }
+      ],
+      "absurdity": {
+        "logic_gap": 8,
+        "performance": 3,
+        "remixability": 9,
+        "context_collapse": 8
+      },
+      "lineage": {
+        "parents": [],
+        "children": []
+      }
+    }
+  ]
+}
